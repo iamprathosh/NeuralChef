@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.frame {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 40px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+body {
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: black;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+#chat-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5px #1da1f2;
+    margin-bottom: 110px;
+    flex-grow: 1; /* This allows the content to take up remaining space */
+    overflow-y: auto; /* Enables vertical scrolling for content */
+    padding: 20px;
+}
+
+li {
+    white-space: pre-line;
+}
+
+#chat-container li {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px 2px;
+    list-style-type: none;
+}
+
+.bot {
+    background-color: #1C1A1C;
+    color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: .4em .4em black;
+}
+
+#inputs {
+    vertical-align: text-top;
+}
+
+.user {
+    padding-left: 5px;
+    background-color: #1da1f2;
+    box-shadow: .4em .4em black;
+}
+
+form {
+    position: absolute;
+    bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgb(218, 229, 255);
+    border: 1px solid rgb(159, 159, 160);
+    border-radius: 20px;
+    padding: 1rem .7rem 0 .7rem;
+    font-size: 1.125rem;
+    width: 90vw;
+    color: black;
+    margin: 0;
+}
+
+.formContainer {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#message {
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 82vw;
+    height: 3.2vh;
+}
+
+#inputs {
+    justify-content: space-around;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+}
+
+.input {
+    position: absolute;
+    opacity: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.reset-button:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.reset-button:link {
+        color: white;
+    }
+.reset-button:visited {
+    color: white;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+#submitButton {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+}
+.image-label {
+    position: absolute;
+    left: 2px;
+    top: 25%;
+}
+#image {
+    display: block;
+}

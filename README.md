@@ -1,2 +1,7 @@
-# NeuralChef
-This Python project leverages computer vision and natural language processing to create a system that analyzes an uploaded dish image and retrieves a corresponding recipe. The emphasis lies on building a robust proof-of-concept with potential for future expansion into a mobile application.
+# farm-hub
+
+### Bloke Model (pr)
+https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF/tree/main
+
+### start flask
+> gunicorn -w 1 -b 0.0.0.0:5000 flask_server.run:app
